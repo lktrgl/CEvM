@@ -24,6 +24,11 @@ include_directories (
 set (libsources ${libsources}
      src/CEvM/event_machine.c
      include/CEvM/event_machine.h
+     include/CEvM/event.h
+     include/CEvM/event_handler.h
+     include/CEvM/event_handler_list.h
+     src/CEvM/step_event_machine.c
+     include/CEvM/step_event_machine.h
      )
 
 add_library ( cstm
