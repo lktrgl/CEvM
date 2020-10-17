@@ -29,21 +29,22 @@ set (libsources ${libsources}
      include/CEvM/event_handler_list.h
      src/CEvM/step_event_machine.c
      include/CEvM/step_event_machine.h
+     include/CEvM/impl/event_cfg.h
      )
 
-add_library ( cstm
+add_library ( cevm
     ${libsources}
      )
 
 if(NOT IS_SUBPROJECT)
-	add_executable(cstm_app
+	add_executable(cevm_app
 	     src/app/main.c
 	     src/app/app_event_machine.c
 	     include/app/app_event_machine.h
 	     )
 	
-	target_link_libraries(cstm_app
-	     cstm
+	target_link_libraries(cevm_app
+	     cevm
 	     lggm
 	     )
 endif()

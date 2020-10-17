@@ -1,0 +1,8 @@
+#ifndef APP_APP_CFG_H_INCLUDED
+#define APP_APP_CFG_H_INCLUDED
+
+#define DBGPRN_ENABLED
+
+#define SLEEPER_COUNT (2)
+
+#endif /* APP_APP_CFG_H_INCLUDED */
